@@ -294,3 +294,10 @@ form textarea {
   width: 100%;
   resize: none
 }
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border: 1px solid #39A7FF;
+  outline: 1px solid #39A7FF;
+}
