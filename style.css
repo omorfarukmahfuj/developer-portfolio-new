@@ -1,119 +1,121 @@
 /* Fonts Added */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 
-/* Common Styles */
 * {
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
+/* Common Styles */
 .btn-primary {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
   background-color: #39A7FF;
-  border: none;
-  color: white;
+  border: 0;
+  padding: 15px 25px;
   border-radius: 5px;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .btn-secondary {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #39A7FF;
   background-color: #39a6ff00;
   border: 2px solid #39A7FF;
-  color: #39A7FF;
+  padding: 15px 25px;
   border-radius: 5px;
-  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+.btn-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Header Styles */
+header {
+  background: #F3F9FF;
+  background-image: url('images/header_bg_blue.png'), url('images/developer.png');
+  background-repeat: no-repeat;
+  background-position: bottom right, top 30px left;
+  padding-top: 35px;
+  padding-left: 210px;
+}
+
+/* Nav Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 50px;
+
+}
+
+.nav-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1E1E1E;
+}
 
 .text-primary {
   color: #39A7FF;
 }
 
-/* Header Styles */
-header {
+nav ul {
   display: flex;
-  background-color: #F3F9FF;
-  background-size: 50%;
-  background-image: url('./images/header_bg_blue.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  align-items: center;
 }
 
-.text-developer {
-  margin-top: 50px;
-  padding-right: 70px;
-  padding-left: 20px;
+nav ul>li {
+  list-style: none;
+  margin-left: 50px;
 }
 
-.banner {
+nav ul li>a {
+  text-decoration: none;
+  color: #474747;
+  font-size: 18px;
+}
+
+/* Hero Section Styles */
+
+.hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.banner-content {
+.hero-section>img {
   width: 600px;
-  height: 70vh;
 }
 
-.banner-greeting {
+.hero-content>h3 {
   color: #474747;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 600;
-  margin-bottom: 0;
 }
 
-.banner-title {
+.hero-content>h1 {
   color: #181818;
-  font-size: 85px;
+  font-size: 80px;
+  font-weight: 700;
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
-.banner-description {
+.hero-content>p {
   color: #757575;
   font-size: 16px;
+  line-height: 28px;
+  width: 550px;
   margin-bottom: 30px;
-}
-
-
-.header-picture {
-  width: 50%;
-  background-position: bottom right;
-}
-
-/* Nav Styles */
-nav {
-  padding: 50px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-title {
-  font-size: 40px;
-  font-weight: 800;
-  color: #181818;
-}
-
-nav>ul {
-  display: flex;
-  align-items: center;
-}
-
-ul li {
-  list-style: none;
-  margin-right: 50px;
-  font-size: 16px;
-}
-
-nav>ul>li>a {
-  text-decoration: none;
-  color: #474747;
 }
