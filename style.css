@@ -139,7 +139,6 @@ nav ul li>a {
 
 /* Main Section Styles*/
 main {
-
   max-width: 1065px;
   margin: auto;
 }
@@ -255,4 +254,43 @@ main {
 .resume-column>hr {
   background: #D1D1D1;
   margin: 30px 0;
+}
+
+/* Footer Styles */
+
+footer {
+  max-width: 1065px;
+  margin: auto;
+  padding: 120px 215px;
+  display: flex;
+  gap: 100px;
+  background-color: #F3F9FF;
+}
+
+.footer-column {
+  width: 45%;
+}
+
+.footer-description {
+  color: #474747;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.social-links a {
+  margin-right: 24px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  display: block;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  background-color: #FFF;
+  border: 0;
+  padding: 16px 28px;
+  width: 100%;
+  resize: none
 }
